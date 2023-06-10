@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .btn-swipe{
+        @apply drop-shadow-[0px_10px_20px_#E9E9EA] bg-white p-[2em] rounded-full w-[90px] h-[90px];
+    }
+    .accept{
+        background: url("../images/icon-heart.png") no-repeat center;
+
+    }
+    .accept:hover{
+        @apply drop-shadow-[0px_10px_20px_#CCF1E6] bg-[#DBFFF4] transition-all;
+    }
+
+    .reject{
+        background: url("../images/icon-cross.png") no-repeat center;
+
+    }
+    .reject:hover{
+        @apply drop-shadow-[0px_10px_20px_#EDD9DF] bg-[#FFE7EF] transition-all;
+    }
+}
