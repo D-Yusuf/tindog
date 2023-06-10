@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <script>
+    tailwind.config = {
+      content: ["./index.html", "./index.js", "./public/**/*.{js,ts,jsx,tsx}"],
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: "'Poppins', sans-serif;",
+          },
+        },
+      },
+    };
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .btn-swipe {
+        @apply drop-shadow-[0px_10px_20px_#E9E9EA] bg-white p-[2em] rounded-full w-[90px] h-[90px];
+      }
+      .accept {
+        background: url("../images/icon-heart.png") no-repeat center;
+      }
+      .accept:hover {
+        @apply drop-shadow-[0px_10px_20px_#CCF1E6] bg-[#DBFFF4] transition-all;
+      }
+
+      .reject {
+        background: url("../images/icon-cross.png") no-repeat center;
+      }
+      .reject:hover {
+        @apply drop-shadow-[0px_10px_20px_#EDD9DF] bg-[#FFE7EF] transition-all;
+      }
+
+      .badge {
+        @apply sm:max-w-[233px] max-w-[180px] absolute top-[55px] left-2 rotate-[-35deg];
+      }
+    }
+  </style>
+  <body class="font-poppins bg-white min-h-screen grid place-items-center">
+    
+    <div id="card-container"></div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

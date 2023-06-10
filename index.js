@@ -1,5 +1,5 @@
-import dogsData from "./public/data";
-import Dog from "./public/Dog";
+import dogsData from "./public/data.js";
+import Dog from "./public/Dog.js";
 let canRate = true;
 let dog = new Dog(dogsData[0]); //first dog
 let dogsClone = [...dogsData]
