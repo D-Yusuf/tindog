@@ -1,2 +1,4 @@
 # Tindog
-### solo project from [scrimba](https://scrimba.com/)
+### Solo Project from [Scrimba.com](https://scrimba.com/)
+
+#### Live site: https://tinder-fordogs.netlify.app/
