@@ -23,6 +23,14 @@ const dogsData = [
         hasBeenSwiped: false,
         hasBeenLiked: false
     },
+    {
+        name: "Richard",
+        avatar: "images/dog-richard.jpg",
+        age: 21,
+        bio: "U want a flower baby",
+        hasBeenSwiped: false,
+        hasBeenLiked: false
+    },
 ]
 
 // Remember to export the data!
