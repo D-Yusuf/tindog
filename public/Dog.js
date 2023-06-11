@@ -30,8 +30,7 @@ class Dog {
             />
             <!-- like-nope pics -->
             <div id="like-reject-imgs">
-                <img class="badge hidden" src="./images/badge-nope.png" alt="badge">
-                <img class="badge hidden" src="./images/badge-like.png" alt="badge">
+                
             </div>
             <!--// like-nope pics //-->
             <!-- pic text -->
