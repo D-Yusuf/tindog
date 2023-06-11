@@ -37,8 +37,7 @@ function useLikeRejectBtns(btnId) {
     canRate = false
     setTimeout(()=>{
         if (dog.hasBeenSwiped) {
-          dog = getNewDog();
-          console.log(dog)
+          dog = getNewDog();          
           canRate = true
           render();
         }
